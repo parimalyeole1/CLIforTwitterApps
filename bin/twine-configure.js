@@ -1,5 +1,9 @@
 const program = require('commander')
-const pkg = require('./../package.json')
+// const pkg = require('./../package.json')
+const pkg = {
+  name: 'twine-cli',
+  version: '1.0.0'
+}
 const configure = require('./../commands/configure')
 
 program

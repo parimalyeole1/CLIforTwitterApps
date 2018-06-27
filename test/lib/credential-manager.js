@@ -15,10 +15,9 @@ describe('the credential manager', () => {
   before(() => {
     creds = new CredentialManager('twine-test')
   })
-  // TODO: this test is not workig make it work
   it('should return credentials when they are found', async () => {
-    await creds.storeKeyAndSecret('apiKey', 'foo', 'bar')
-    let [key, secret] = await creds.getKeyAndSecret('apiKey')
+    await creds.storeKeyAndSecret('foo', 'bar')
+    let [key, secret] = await creds.getKeyAndSecret()
     expect(key).to.equal('foo')
     expect(secret).to.equal('bar')
   })
