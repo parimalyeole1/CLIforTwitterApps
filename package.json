@@ -1,7 +1,7 @@
 {
   "name": "twine-cli",
   "version": "1.0.0",
-  "description": "",
+  "description": "twine-cli is way to use twitter from command line tools",
   "main": "index.js",
   "bin": {
     "twine": "./bin/twine.js"
@@ -36,9 +36,12 @@
     "sinon": "^6.0.1"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "commander": "^2.15.1",
     "configstore": "^3.1.2",
     "inquirer": "^6.0.0",
-    "keytar-prebuild": "^4.1.1"
+    "keytar-prebuild": "^4.1.1",
+    "oauth-1.0a": "^2.2.4",
+    "opn": "^5.3.0"
   }
 }

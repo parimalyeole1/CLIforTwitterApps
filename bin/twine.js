@@ -1,11 +1,7 @@
 #! /usr/bin/env node
 
 const program = require('commander')
-// const pkg = require('./../package.json')
-const pkg = {
-  name: 'twine-cli',
-  version: '1.0.0'
-}
+const pkg = require('./../package.json')
 
 program
   .version(pkg.version)

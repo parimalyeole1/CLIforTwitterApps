@@ -1,9 +1,5 @@
 const program = require('commander')
-// const pkg = require('./../package.json')
-const pkg = {
-  name: 'twine-cli',
-  version: '1.0.0'
-}
+const pkg = require('./../package.json')
 const configure = require('./../commands/configure')
 
 program
@@ -14,6 +10,13 @@ program
   .description('Add twitter api and secrete')
   .action(async () => {
     await configure.consumer(pkg.name)
+  })
+
+program
+  .command('account')
+  .description('Authorize access to a Twitter account')
+  .action(async () => {
+    await configure.account(pkg.name)
   })
 
 program
