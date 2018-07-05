@@ -7,8 +7,22 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}/index.js"
+            "name": "Launch command twine configure consumer",
+            "program": "${workspaceFolder}/bin/twine-configure.js",
+            "args": [
+                "consumer"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch command twine configure account",
+            "program": "${workspaceFolder}/bin/twine-configure.js",
+            "args": [
+                "account"
+            ],
+            "console": "integratedTerminal"
         },
         {
             "type": "node",
